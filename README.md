@@ -218,11 +218,11 @@ Dialog({
     borderRadius: 6,                // 对话框圆角值，单位：px
     width: 500,                     // 对话框宽度，单位：px
     ok: {
-        text: "确定",
-        loading: false,
-        loadingText: "确定",
-        notClose: false,
-        callback: function () {}
+        text: "确定",                // 确定按钮的文字
+        loading: false,             // 点击确定按钮时，是否显示 loading 效果（此时将不会执行关闭对话框的操作）
+        loadingText: "确定",         // 显示 loading 效果时，确定按钮文字的变化
+        notClose: false,            // 点击确定按钮是否关闭对话框
+        callback: function () {}    // 点击确定按钮的回调事件
     },
     cancel: {
         text: "取消",
