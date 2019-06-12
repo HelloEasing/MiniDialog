@@ -230,6 +230,6 @@ Dialog({
         callback: $.noop
     },
     afterOpen: $.noop,
-    afterClose: $.noop,
+    afterClose: function () {}
 });
 ```
