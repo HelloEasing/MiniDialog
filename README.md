@@ -1,20 +1,20 @@
 # MiniDialog 对话框
 
-**功能丰富、使用简单、灵活多样的轻量级对话框组件。**
+#### 功能丰富、使用简单、灵活多样的轻量级对话框组件。
 
 
 
-### 在线 Demo
+#### 在线 Demo
 
 [查看 Demo](http://minidialog.applinzi.com/)
 
 
-### 兼容情况
+#### 兼容情况
 
 Chrome45+，Firefox40+，Edge15+，Safari11+，IE11。
 
 
-### 四种信息提示对话框
+#### 四种信息提示对话框
 
 ```html
 ## 内容可选
