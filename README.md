@@ -1,15 +1,10 @@
 # MiniDialog 对话框
 
-### 功能丰富、使用简单、灵活多样的轻量级对话框组件。
+### 介绍：功能丰富、使用简单、灵活多样的轻量级对话框组件。
 
-#### 在线 Demo [http://minidialog.applinzi.com/](http://minidialog.applinzi.com/)
+#### 在线示例： [http://minidialog.applinzi.com/](http://minidialog.applinzi.com/)
 
-
-
-
-#### 兼容情况
-
-Chrome45+，Firefox40+，Edge15+，Safari11+，IE11。
+#### 兼容情况：Chrome45+，Firefox40+，Edge15+，Safari11+，IE11。
 
 #### 使用方法
 
