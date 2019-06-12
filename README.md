@@ -222,15 +222,15 @@ Dialog({
         loading: false,             // 点击确定按钮时，是否显示 loading 效果（此时将不会执行关闭对话框的操作）
         loadingText: "确定",         // 显示 loading 效果时，确定按钮文字的变化
         notClose: false,            // 点击确定按钮是否关闭对话框
-        callback: function () {}    // 点击确定按钮的回调事件
+        callback: function () {}    // 点击确定按钮的回调函数
     },
     cancel: {
-        text: "取消",
-        show: true,
-        callback: function () {}
+        text: "取消",                // 取消按钮的文字
+        show: true,                 // 是否显示取消按钮
+        callback: function () {}    // 点击取消按钮的回调函数
     },
-    afterOpen: function () {},
-    afterClose: function () {}
+    afterOpen: function () {},      // 对话框打开后的回调函数
+    afterClose: function () {}      // 对话框关闭后的回调函数
 });
 ```
 
