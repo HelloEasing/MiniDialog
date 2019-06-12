@@ -194,6 +194,7 @@ Dialog({
 });
 ```
 <br>
+
 ### 全部参数属性及默认值：
 ```js
 Dialog({
@@ -221,14 +222,14 @@ Dialog({
         loading: false,
         loadingText: "确定",
         notClose: false,
-        callback: function () {}
+        callback: $.noop
     },
     cancel: {
         text: "取消",
         show: true,
-        callback: function () {}
+        callback: $.noop
     },
-    afterOpen: function () {},
-    afterClose: function () {},
+    afterOpen: $.noop,
+    afterClose: $.noop,
 });
 ```
