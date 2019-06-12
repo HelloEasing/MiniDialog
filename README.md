@@ -222,14 +222,14 @@ Dialog({
         loading: false,
         loadingText: "确定",
         notClose: false,
-        callback: $.noop
+        callback: function () {}
     },
     cancel: {
         text: "取消",
         show: true,
-        callback: $.noop
+        callback: function () {}
     },
-    afterOpen: $.noop,
+    afterOpen: function () {},
     afterClose: function () {}
 });
 ```
