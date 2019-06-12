@@ -4,7 +4,7 @@
 
 #### 在线体验： [http://minidialog.applinzi.com/](http://minidialog.applinzi.com/)
 
-#### 兼容情况：Chrome45+，Firefox40+，Edge15+，Safari11+，IE11
+#### 兼容情况：Chrome55+，Firefox50+，Edge16+，Safari11+，IE11
 
 #### 代码示例：
 
@@ -92,6 +92,7 @@ Dialog({
 
 #### 嵌入 Iframe
 ```js
+// iframeContent 中的 src 和 height 属性必须要设置
 Dialog({
     title: "标题",
     width: 1100,
@@ -105,6 +106,7 @@ Dialog({
 
 #### 嵌入图片
 ```js
+// imageContent 中的 src 和 height 属性必须要设置
 Dialog({
     width: 1100,
     imageContent: {
@@ -119,6 +121,7 @@ Dialog({
 
 #### 嵌入多张图片
 ```js
+// imageContent 中的 src 和 height 属性必须要设置
 Dialog({
     width: 700,
     imageContent: {
@@ -133,6 +136,7 @@ Dialog({
 
 #### 嵌入视频
 ```js
+// videoContent 中的 src 和 height 属性必须要设置
 Dialog({
     width: 800,
     videoContent: {
@@ -153,7 +157,7 @@ Dialog({
     ok: {
         loading: true,
         loadingText: "等一会",
-        click: function () {
+        callback: function () {
             setTimeout(function () {
                 Dialog.close();
             }, 3000)
@@ -168,12 +172,12 @@ Dialog({
     title: "标题",
     content: "内容",
     ok: {
-        click: function () {
+        callback: function () {
             alert( "确定" );
         }
     },
     cancel: {
-        click: function () {
+        callback: function () {
             alert( "取消" );
         }
     }
@@ -198,14 +202,14 @@ Dialog({
 ### 全部属性及默认值：
 ```js
 Dialog({
-    title: "网页消息",               // 对话框标题
-    content: "",                    // 对话框内容
+    title: "网页消息",               // 对话框标题（纯文本格式）
+    content: "",                    // 对话框内容（可传入 HTML 结构）
     contentBgColor: "#fff",         // 内容区域的背景色
-    iframeContent: null,            // 嵌入 iframe 的配置项，有必填两个属性 { src, height }
-    videoContent: null,             // 嵌入图片的配置项，有必填两个属性 { src, height }
-    imageContent: null,             // 嵌入视频的配置项，有必填两个属性 { src, height }，一个可选属性 { autoplay }
+    iframeContent: null,            // 嵌入 iframe 的配置项，有两个必填属性 { src, height }
+    videoContent: null,             // 嵌入图片的配置项，有两个必填属性 { src, height }
+    imageContent: null,             // 嵌入视频的配置项，有两个必属性 { src, height }，一个可选属性 { autoplay: true/false }
     fullscreen: false,              // 全屏显示
-    draggable: false,               // 可以拖动（设置此属性后，mask 将自动设置为 false）
+    draggable: false,               // 可以拖动（设置此属性后，遮罩层将自动隐藏）
     maskClose: false,               // 点击遮罩层关闭对话框
     mask: true,                     // 显示遮罩层
     closable: true,                 // 显示右上角关闭图标
