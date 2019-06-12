@@ -193,11 +193,11 @@ Dialog({
     }
 });
 ```
-
+<br>
 ### 全部参数属性及默认值：
 ```js
 Dialog({
-    title: "网页消息",
+    title: "网页消息",             // 对话框标题
     content: "",
     contentBgColor: "#fff",
     iframeContent: null,
@@ -221,14 +221,14 @@ Dialog({
         loading: false,
         loadingText: "确定",
         notClose: false,
-        callback: $.noop
+        callback: function () {}
     },
     cancel: {
         text: "取消",
         show: true,
-        callback: $.noop
+        callback: function () {}
     },
-    afterOpen: $.noop,
-    afterClose: $.noop,
+    afterOpen: function () {},
+    afterClose: function () {},
 });
 ```
