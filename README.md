@@ -3,7 +3,7 @@
 ### 功能丰富、使用简单、灵活多样、体积轻巧的无任何第三方依赖的 JavaScript 对话框组件。
 
 #### 源代码说明：
->MiniDialog 的原始开发版程序采用基于 ES6 标准的 JavaScript 编写，如果需要兼容 IE11 浏览器，需要将其转换成 ES5 格式，
+>MiniDialog 的原始开发版程序采用基于 ES6 标准的 JavaScript 编写，如果需要兼容 IE11 浏览器，需要将其转换成 ES5 格式，作者已提供了经过 Babel 转换之后的程序，请前往 dist 目录下查看，该目录下的四个文件是基于 ES6 的原始未压缩和已压缩版以及转换成 ES5 的未压缩和已压缩版，请根据实际需求使用。
 
 #### 在线体验：[http://minidialog.applinzi.com/](http://minidialog.applinzi.com/)
 
