@@ -233,3 +233,13 @@ Dialog({
     afterClose: function () {}
 });
 ```
+
+### 全局关闭方法：
+```js
+// 关闭指定对话框
+var thisDialog = Dialog( "标题" );
+Dialog.close( thisDialog );
+
+// 关闭全部对话框
+Dialog.close();
+```
