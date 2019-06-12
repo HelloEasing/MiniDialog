@@ -1,6 +1,6 @@
 # MiniDialog 对话框
 
-### 功能丰富、使用简单、灵活多样的轻量级对话框组件。
+### 功能丰富、使用简单、灵活多样、体积轻巧的无任何第三方依赖的 JavaScript 对话框组件。
 
 #### 在线体验： [http://minidialog.applinzi.com/](http://minidialog.applinzi.com/)
 
