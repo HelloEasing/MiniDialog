@@ -197,7 +197,7 @@ Dialog({
 ### 全部参数属性及默认值：
 ```js
 Dialog({
-    title: "网页消息",             // 对话框标题
+    title: "网页消息",
     content: "",
     contentBgColor: "#fff",
     iframeContent: null,
