@@ -206,6 +206,8 @@ Dialog({
 
 ### 全部属性及默认值：
 ```js
+// 以下配置项只适用于通过 Dialog({}) 形式调用的对话框，
+// 不能用于 info / success / warn / error 这四种信息提示对话框上
 Dialog({
     title: "网页消息",               // 对话框标题（纯文本格式）
     content: "",                    // 对话框内容（可传入 HTML 结构）
