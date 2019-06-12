@@ -195,7 +195,7 @@ Dialog({
 ```
 <br>
 
-### 全部参数属性及默认值：
+### 全部属性及默认值：
 ```js
 Dialog({
     title: "网页消息",
@@ -204,19 +204,19 @@ Dialog({
     iframeContent: null,
     videoContent: null,
     imageContent: null,
-    width: 500,
     fullscreen: false,
+    draggable: false,
+    maskClose: false,
+    mask: true,
     closable: true,
     bodyScroll: true,
-    draggable: false,
-    mask: true,
-    maskClose: false,
     showTitle: true,
     showButton: true,
+    autoCloseEffect: true,
+    autoClose: 0,
     parentsIframeLayer: 0,
     borderRadius: 6,
-    autoClose: 0,
-    autoCloseEffect: true,
+    width: 500,
     ok: {
         text: "确定",
         loading: false,
