@@ -193,3 +193,42 @@ Dialog({
     }
 });
 ```
+
+#### 全部参数属性及默认值：
+```js
+Dialog({
+    title: "网页消息",
+    content: "",
+    contentBgColor: "#fff",
+    iframeContent: null,
+    videoContent: null,
+    imageContent: null,
+    width: 500,
+    fullscreen: false,
+    closable: true,
+    bodyScroll: true,
+    draggable: false,
+    mask: true,
+    maskClose: false,
+    showTitle: true,
+    showButton: true,
+    parentsIframeLayer: 0,
+    borderRadius: 6,
+    autoClose: 0,
+    autoCloseEffect: true,
+    ok: {
+        text: "确定",
+        loading: false,
+        loadingText: "确定",
+        notClose: false,
+        callback: $.noop
+    },
+    cancel: {
+        text: "取消",
+        show: true,
+        callback: $.noop
+    },
+    afterOpen: $.noop,
+    afterClose: $.noop,
+});
+```
