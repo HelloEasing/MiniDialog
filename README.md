@@ -199,24 +199,24 @@ Dialog({
 ```js
 Dialog({
     title: "网页消息",            // 对话框标题
-    content: "",
-    contentBgColor: "#fff",
-    iframeContent: null,
-    videoContent: null,
-    imageContent: null,
-    fullscreen: false,
-    draggable: false,
-    maskClose: false,
-    mask: true,
-    closable: true,
-    bodyScroll: true,
-    showTitle: true,
-    showButton: true,
-    autoCloseEffect: true,
-    autoClose: 0,
-    parentsIframeLayer: 0,
-    borderRadius: 6,
-    width: 500,
+    content: "",                // 对话框内容
+    contentBgColor: "#fff",     // 内容区域的背景色
+    iframeContent: null,        // 嵌入 iframe 的配置项，有必填两个属性 { src, height }
+    videoContent: null,         // 嵌入图片的配置项，有必填两个属性 { src, height }
+    imageContent: null,         // 嵌入视频的配置项，有必填两个属性 { src, height }，一个可选属性 { autoplay }
+    fullscreen: false,          // 全屏显示
+    draggable: false,           // 可以拖动（设置此属性后，mask 将自动设置为 false）
+    maskClose: false,           // 点击遮罩层关闭对话框
+    mask: true,                 // 显示遮罩层
+    closable: true,             // 显示右上角关闭图标
+    bodyScroll: true,           // body 可以滚动
+    showTitle: true,            // 显示标题
+    showButton: true,           // 显示按钮
+    autoCloseEffect: true,      // 当设置了自动关闭时，显示自动关闭的动画效果
+    autoClose: 0,               // 自动关闭的时长，单位：ms（默认：0 表示不开启自动关闭功能）
+    parentsIframeLayer: 0,      // 在祖先级 iframe 中创建对话框，数字表示祖先 iframe 的级数
+    borderRadius: 6,            // 对话框圆角值，单位：px
+    width: 500,                 // 对话框宽度，单位：px
     ok: {
         text: "确定",
         loading: false,
