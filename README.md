@@ -13,8 +13,17 @@
 3. [常规配置](#常规配置)
 4. [自定义内容背景色](#自定义内容背景色)
 5. [可拖动的对话框](#可拖动的对话框)
+6. [全屏对话框](#全屏对话框)
+7. [自动关闭](#自动关闭)
+8. [嵌入 Iframe](#嵌入 Iframe)
+9. [嵌入图片](#嵌入图片)
+10. [嵌入多张图片](#嵌入多张图片)
+11. [嵌入视频](#嵌入视频)
+12. [确定按钮 - 加载中](#确定按钮 - 加载中)
+13. [按钮事件](#按钮事件)
+14. [开关事件](#开关事件)
 
-##### 四种信息提示对话框
+#### 四种信息提示对话框
 
 ```js
 // 内容可选
@@ -24,7 +33,7 @@ Dialog.warn( "标题", "内容" );
 Dialog.error( "标题", "内容" );
 ```
 
-##### 快捷方式
+#### 快捷方式
 ```js
 // 只传入内容（此时将采用默认标题：网页消息）
 Dialog( "内容" );
@@ -36,7 +45,7 @@ Dialog( "标题", "内容" );
 Dialog( "标题", "内容", 800 );
 ```
 
-##### 常规配置
+#### 常规配置
 ```js
 Dialog({
     title: "标题",
@@ -45,7 +54,7 @@ Dialog({
 });
 ```
 
-##### 自定义内容背景色
+#### 自定义内容背景色
 ```js
 Dialog({
     title: "标题",
@@ -54,11 +63,133 @@ Dialog({
 });
 ```
 
-##### 可拖动的对话框
+#### 可拖动的对话框
 ```js
 Dialog({
     title: "标题",
     content: "内容",
     draggable: true
+});
+```
+
+#### 全屏对话框
+```js
+Dialog({
+    title: "标题",
+    content: "内容",
+    fullscreen: true
+});
+```
+
+#### 自动关闭
+```js
+Dialog({
+    title: "标题",
+    content: "内容",
+    autoClose: 5000
+});
+```
+
+#### 嵌入 Iframe
+```js
+Dialog({
+    title: "标题",
+    width: 1100,
+    iframeContent: {
+        src: "http://www.baidu.com/",
+        height: 600
+    },
+    showButton: false
+});
+```
+
+#### 嵌入图片
+```js
+Dialog({
+    width: 1100,
+    imageContent: {
+        src: "demo.png",
+        height: 600
+    },
+    showButton: false,
+    showTitle: false,
+    maskClose: true
+});
+```
+
+#### 嵌入多张图片
+```js
+Dialog({
+    width: 700,
+    imageContent: {
+        src: [ "1.png", "2.png", "3.png", "4.png", "5.png" ],
+        height: 400
+    },
+    showButton: false,
+    showTitle: false,
+    maskClose: true
+});
+```
+
+#### 嵌入视频
+```js
+Dialog({
+    width: 800,
+    videoContent: {
+        src: "demo.mp4",
+        height: 450
+    },
+    showButton: false,
+    showTitle: false,
+    maskClose: true
+});
+```
+
+#### 确定按钮 - 加载中
+```js
+Dialog({
+    title: "标题",
+    content: "内容",
+    ok: {
+        loading: true,
+        loadingText: "等一会",
+        click: function () {
+            setTimeout(function () {
+                Dialog.close();
+            }, 3000)
+        }
+    }
+});
+```
+
+#### 按钮事件
+```js
+Dialog({
+    title: "标题",
+    content: "内容",
+    ok: {
+        click: function () {
+            alert( "确定" );
+        }
+    },
+    cancel: {
+        click: function () {
+            alert( "取消" );
+        }
+    }
+});
+```
+
+#### 开关事件
+```js
+Dialog({
+    title: "标题",
+    content: "内容",
+    afterOpen: function () {
+        alert( "打开了对话框" );
+    },
+    afterClose: function () {
+        alert( "关闭了对话框" );
+    }
 });
 ```
