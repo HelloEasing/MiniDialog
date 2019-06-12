@@ -2,11 +2,11 @@
 
 ### 功能丰富、使用简单、灵活多样的轻量级对话框组件。
 
-#### 在线示例： [http://minidialog.applinzi.com/](http://minidialog.applinzi.com/)
+#### 在线体验： [http://minidialog.applinzi.com/](http://minidialog.applinzi.com/)
 
 #### 兼容情况：Chrome45+，Firefox40+，Edge15+，Safari11+，IE11
 
-#### 使用方法：
+#### 代码示例：
 
 1. [四种信息提示对话框](#四种信息提示对话框)
 2. [快捷方式](#快捷方式)
