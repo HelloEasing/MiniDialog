@@ -31,6 +31,11 @@ Dialog.info( "标题", "内容" );
 Dialog.success( "标题", "内容" );
 Dialog.warn( "标题", "内容" );
 Dialog.error( "标题", "内容" );
+
+// 还可支持确定回调，如：
+Dialog.info( "标题", "内容" ).ok(function () {
+    alert( "确定" );    
+})
 ```
 
 #### 快捷方式
